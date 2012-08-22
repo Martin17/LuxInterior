@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class NotORM\NotORM | photoMatic</title>
+
+	<script type="text/javascript" src="resources/combined.js?3672397537"></script>
+	<script type="text/javascript" src="elementlist.js?936672328"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Lux.html">Lux</a>
+						</li>
+				<li class="active"><a href="namespace-NotORM.html">NotORM<span></span></a>
+						<ul>
+				<li><a href="namespace-NotORM.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-NotORM.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-NotORM.Structure.html">Structure</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NotORM.Base.html">Base</a></li>
+				<li><a href="class-NotORM.Literal.html">Literal</a></li>
+				<li><a href="class-NotORM.MultiResult.html">MultiResult</a></li>
+				<li class="active"><a href="class-NotORM.NotORM.html">NotORM</a></li>
+				<li><a href="class-NotORM.Result.html">Result</a></li>
+				<li><a href="class-NotORM.Row.html">Row</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NotORM.html" title="Summary of NotORM"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class NotORM</h1>
+
+
+	<div class="description">
+	
+<p>Database representation Modified to use PHP namespeces by Martín Panizzo
+&lt;<a
+href="mailto:martin&#64;fotolounge.com.ar">martin&#64;<!---->fotolounge.com.ar</a>&gt;</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-NotORM.Base.html"><span>NotORM\Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NotORM\NotORM</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NotORM.html">NotORM</a><br />
+		
+
+				<b>Author:</b>
+				Jakub Vrána &lt;<a
+href="mailto:vrana&#64;php.net">vrana&#64;<!---->php.net</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-NotORM.NotORM.html#4" title="Go to source code">lib/NotORM/NotORM.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NotORM.NotORM.html#16" title="Go to source code">__construct</a>( <span><code><a href="class-PDO.html">PDO</a></code> <var>$connection</var></span>, <span>NotORM\Structure <var>$structure</var> = <span class="php-keyword1">null</span></span>, <span>NotORM\Cache <var>$cache</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create database representation</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create database representation</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd><code><code><a href="class-PDO.html">PDO</a></code></code></dd>
+					<dt><var>$structure</var></dt>
+					<dd><code>NotORM_Structure</code><br>or null for new NotORM_Structure_Convention</dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>NotORM_Cache</code><br>or null for no cache</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Result
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-NotORM.NotORM.html#32" title="Go to source code">__get</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get table data to use as $db-&gt;table[1]</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get table data to use as $db-&gt;table[1]</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Result</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-NotORM.NotORM.html#41" title="Go to source code">__set</a>( <span> <var>$name</var></span>, <span> <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Set write-only properties</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Set write-only properties</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Result
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-NotORM.NotORM.html#58" title="Go to source code">__call</a>( <span>string <var>$table</var></span>, <span>array <var>$where</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get table data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get table data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code><br>(["condition"[, array("value")]]) passed to NotORM_Result::where()</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Result</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-NotORM.Base.html#methods">NotORM\Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Base.html#_">access()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-NotORM.Base.html#properties">NotORM\Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Base.html#$cache"><var>$cache</var></a>, 
+			<a href="class-NotORM.Base.html#$connection"><var>$connection</var></a>, 
+			<a href="class-NotORM.Base.html#$debug"><var>$debug</var></a>, 
+			<a href="class-NotORM.Base.html#$driver"><var>$driver</var></a>, 
+			<a href="class-NotORM.Base.html#$freeze"><var>$freeze</var></a>, 
+			<a href="class-NotORM.Base.html#$notORM"><var>$notORM</var></a>, 
+			<a href="class-NotORM.Base.html#$primary"><var>$primary</var></a>, 
+			<a href="class-NotORM.Base.html#$referenced"><var>$referenced</var></a>, 
+			<a href="class-NotORM.Base.html#$rowClass"><var>$rowClass</var></a>, 
+			<a href="class-NotORM.Base.html#$rows"><var>$rows</var></a>, 
+			<a href="class-NotORM.Base.html#$structure"><var>$structure</var></a>, 
+			<a href="class-NotORM.Base.html#$table"><var>$table</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		photoMatic API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

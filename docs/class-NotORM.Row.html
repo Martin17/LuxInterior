@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class NotORM\Row | photoMatic</title>
+
+	<script type="text/javascript" src="resources/combined.js?3672397537"></script>
+	<script type="text/javascript" src="elementlist.js?936672328"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Lux.html">Lux</a>
+						</li>
+				<li class="active"><a href="namespace-NotORM.html">NotORM<span></span></a>
+						<ul>
+				<li><a href="namespace-NotORM.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-NotORM.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-NotORM.Structure.html">Structure</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NotORM.Base.html">Base</a></li>
+				<li><a href="class-NotORM.Literal.html">Literal</a></li>
+				<li><a href="class-NotORM.MultiResult.html">MultiResult</a></li>
+				<li><a href="class-NotORM.NotORM.html">NotORM</a></li>
+				<li><a href="class-NotORM.Result.html">Result</a></li>
+				<li class="active"><a href="class-NotORM.Row.html">Row</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NotORM.html" title="Summary of NotORM"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Row</h1>
+
+
+	<div class="description">
+	
+<p>Single row representation. Modified to use PHP namespeces by Martín Panizzo
+&lt;<a
+href="mailto:martin&#64;fotolounge.com.ar">martin&#64;<!---->fotolounge.com.ar</a>&gt;</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-NotORM.Base.html"><span>NotORM\Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NotORM\Row</span></b>			
+			 implements 
+				<a href="class-IteratorAggregate.html"><span>IteratorAggregate</span></a>, 
+			
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>, 
+			
+				<a href="class-Countable.html"><span>Countable</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NotORM.html">NotORM</a><br />
+		
+
+				<b>Author:</b>
+				Jakub Vrána &lt;<a
+href="mailto:vrana&#64;php.net">vrana&#64;<!---->php.net</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-NotORM.Row.html#5" title="Go to source code">lib/NotORM/Row.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NotORM.Row.html#14" title="Go to source code">__construct</a>( <span>array <var>$row</var></span>, <span><code><a href="class-NotORM.Result.html">NotORM\Result</a></code> <var>$result</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-NotORM.Row.html#20" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get primary key value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get primary key value</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__get" id="___get">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Row
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___get">#</a>
+		<code><a href="source-class-NotORM.Row.html#27" title="Go to source code">__get</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get referenced row</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get referenced row</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Row</code><br>or null if the row does not exist<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__isset" id="___isset">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___isset">#</a>
+		<code><a href="source-class-NotORM.Row.html#55" title="Go to source code">__isset</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Test if referenced row exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Test if referenced row exists</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__set" id="___set">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___set">#</a>
+		<code><a href="source-class-NotORM.Row.html#63" title="Go to source code">__set</a>( <span>string <var>$name</var></span>, <span>NotORM\NotORM_Row <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Store referenced value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Store referenced value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>NotORM_Row</code><br>or null</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__unset" id="___unset">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___unset">#</a>
+		<code><a href="source-class-NotORM.Row.html#73" title="Go to source code">__unset</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove referenced column from data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove referenced column from data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__call" id="___call">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_MultiResult
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___call">#</a>
+		<code><a href="source-class-NotORM.Row.html#82" title="Go to source code">__call</a>( <span>string <var>$name</var></span>, <span>array <var>$args</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get referencing rows</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get referencing rows</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>table name</dd>
+					<dt><var>$args</var></dt>
+					<dd><code>array</code><br>(["condition"[, array("value")]])</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_MultiResult</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-NotORM.Row.html#98" title="Go to source code">update</a>( <span>array <var>$data</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Update row</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update row</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br>or null for all modified values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>number of affected rows or false in case of an error<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-NotORM.Row.html#111" title="Go to source code">delete</a>( )</code>
+
+		<div class="description short">
+			
+<p>Delete row</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete row</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>number of affected rows or false in case of an error<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="access" id="_access">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_access">#</a>
+		<code><a href="source-class-NotORM.Row.html#120" title="Go to source code">access</a>( <span> <var>$key</var></span>, <span> <var>$delete</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Base.html#_">NotORM\Base::access</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIterator" id="_getIterator">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIterator">#</a>
+		<code><a href="source-class-NotORM.Row.html#129" title="Go to source code">getIterator</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IteratorAggregate.html#_">IteratorAggregate::getIterator</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-NotORM.Row.html#136" title="Go to source code">count</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Countable.html#_">Countable::count</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code><a href="source-class-NotORM.Row.html#142" title="Go to source code">offsetExists</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Test if column exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Test if column exists</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>column name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_">ArrayAccess::offsetExists</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code><a href="source-class-NotORM.Row.html#155" title="Go to source code">offsetGet</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get value of column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get value of column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>column name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_">ArrayAccess::offsetGet</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code><a href="source-class-NotORM.Row.html#167" title="Go to source code">offsetSet</a>( <span>string <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Store value in column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Store value in column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>column name</dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_">ArrayAccess::offsetSet</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="attributes"><code>
+			 public 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code><a href="source-class-NotORM.Row.html#176" title="Go to source code">offsetUnset</a>( <span>string <var>$key</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Remove column from data</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Remove column from data</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>column name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-ArrayAccess.html#_">ArrayAccess::offsetUnset</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="row" id="$row">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Row.html#12" title="Go to source code"><var>$row</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$row" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="result" id="$result">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Row.html#12" title="Go to source code"><var>$result</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$result" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-NotORM.Base.html#properties">NotORM\Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Base.html#$cache"><var>$cache</var></a>, 
+			<a href="class-NotORM.Base.html#$connection"><var>$connection</var></a>, 
+			<a href="class-NotORM.Base.html#$debug"><var>$debug</var></a>, 
+			<a href="class-NotORM.Base.html#$driver"><var>$driver</var></a>, 
+			<a href="class-NotORM.Base.html#$freeze"><var>$freeze</var></a>, 
+			<a href="class-NotORM.Base.html#$notORM"><var>$notORM</var></a>, 
+			<a href="class-NotORM.Base.html#$primary"><var>$primary</var></a>, 
+			<a href="class-NotORM.Base.html#$referenced"><var>$referenced</var></a>, 
+			<a href="class-NotORM.Base.html#$rowClass"><var>$rowClass</var></a>, 
+			<a href="class-NotORM.Base.html#$rows"><var>$rows</var></a>, 
+			<a href="class-NotORM.Base.html#$structure"><var>$structure</var></a>, 
+			<a href="class-NotORM.Base.html#$table"><var>$table</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		photoMatic API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

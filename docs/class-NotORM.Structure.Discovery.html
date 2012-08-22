@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class NotORM\Structure\Discovery | photoMatic</title>
+
+	<script type="text/javascript" src="resources/combined.js?3672397537"></script>
+	<script type="text/javascript" src="elementlist.js?936672328"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Lux.html">Lux</a>
+						</li>
+				<li class="active"><a href="namespace-NotORM.html">NotORM<span></span></a>
+						<ul>
+				<li><a href="namespace-NotORM.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-NotORM.Interfaces.html">Interfaces</a>
+						</li>
+				<li class="active"><a href="namespace-NotORM.Structure.html">Structure</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NotORM.Structure.Convention.html">Convention</a></li>
+				<li class="active"><a href="class-NotORM.Structure.Discovery.html">Discovery</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NotORM.Structure.html" title="Summary of NotORM\Structure"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Discovery</h1>
+
+
+	<div class="description">
+	
+<p>Structure reading meta-informations from the database. Modified to use PHP
+namespeces by Martín Panizzo &lt;<a
+href="mailto:martin&#64;fotolounge.com.ar">martin&#64;<!---->fotolounge.com.ar</a>&gt;</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>NotORM\Structure\Discovery</span></b>			
+			 implements 
+				<a href="class-NotORM.Interfaces.Structure.html"><span>NotORM\Interfaces\Structure</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NotORM.html">NotORM</a>\<a href="namespace-NotORM.Structure.html">Structure</a><br />
+		
+
+				<b>Author:</b>
+				Jakub Vrána &lt;<a
+href="mailto:vrana&#64;php.net">vrana&#64;<!---->php.net</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-NotORM.Structure.Discovery.html#5" title="Go to source code">lib/NotORM/Structure/Discovery.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#15" title="Go to source code">__construct</a>( <span>NotORM\Structure\PDO <var>$connection</var></span>, <span>NotORM\Cache <var>$cache</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$foreign</var> = <span class="php-quote">'%s'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Create autodisovery structure</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create autodisovery structure</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$connection</var></dt>
+					<dd><code><code><a href="class-PDO.html">PDO</a></code></code></dd>
+					<dt><var>$cache</var></dt>
+					<dd><code>NotORM_Cache</code></dd>
+					<dt><var>$foreign</var></dt>
+					<dd><code>string</code><br>use "%s_id" to access $name . "_id" column in $row-&gt;$name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__destruct" id="___destruct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___destruct">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#29" title="Go to source code">__destruct</a>( )</code>
+
+		<div class="description short">
+			
+<p>Save data to cache</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save data to cache</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrimary" id="_getPrimary">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrimary">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#37" title="Go to source code">getPrimary</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get primary key of a table in $db-&gt;$table()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get primary key of a table in $db-&gt;$table()</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getPrimary</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReferencingColumn" id="_getReferencingColumn">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReferencingColumn">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#54" title="Go to source code">getReferencingColumn</a>( <span>string <var>$name</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get column holding foreign key in $table[$id]-&gt;$name()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get column holding foreign key in $table[$id]-&gt;$name()</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getReferencingColumn</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReferencingTable" id="_getReferencingTable">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReferencingTable">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#72" title="Go to source code">getReferencingTable</a>( <span>string <var>$name</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get target table in $table[$id]-&gt;$name()</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get target table in $table[$id]-&gt;$name()</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getReferencingTable</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReferencedColumn" id="_getReferencedColumn">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReferencedColumn">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#76" title="Go to source code">getReferencedColumn</a>( <span>string <var>$name</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get column holding foreign key in $table[$id]-&gt;$name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get column holding foreign key in $table[$id]-&gt;$name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getReferencedColumn</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReferencedTable" id="_getReferencedTable">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReferencedTable">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#80" title="Go to source code">getReferencedTable</a>( <span>string <var>$name</var></span>, <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get table holding foreign key in $table[$id]-&gt;$name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get table holding foreign key in $table[$id]-&gt;$name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getReferencedTable</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSequence" id="_getSequence">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSequence">#</a>
+		<code><a href="source-class-NotORM.Structure.Discovery.html#97" title="Go to source code">getSequence</a>( <span>string <var>$table</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get sequence name, used by insert</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get sequence name, used by insert</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-NotORM.Interfaces.Structure.html#_">NotORM\Interfaces\Structure::getSequence</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="connection" id="$connection">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Structure.Discovery.html#12" title="Go to source code"><var>$connection</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$connection" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cache" id="$cache">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Structure.Discovery.html#12" title="Go to source code"><var>$cache</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cache" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="structure" id="$structure">
+
+		<td class="attributes"><code>
+			protected 
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Structure.Discovery.html#12" title="Go to source code"><var>$structure</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$structure" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="foreign" id="$foreign">
+
+		<td class="attributes"><code>
+			protected 
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NotORM.Structure.Discovery.html#13" title="Go to source code"><var>$foreign</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$foreign" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+</div>
+
+	<div id="footer">
+		photoMatic API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

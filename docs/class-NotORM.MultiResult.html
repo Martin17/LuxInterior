@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.7.0" />
+
+	<title>Class NotORM\MultiResult | photoMatic</title>
+
+	<script type="text/javascript" src="resources/combined.js?3672397537"></script>
+	<script type="text/javascript" src="elementlist.js?936672328"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1567499433" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Lux.html">Lux</a>
+						</li>
+				<li class="active"><a href="namespace-NotORM.html">NotORM<span></span></a>
+						<ul>
+				<li><a href="namespace-NotORM.Cache.html">Cache</a>
+						</li>
+				<li><a href="namespace-NotORM.Interfaces.html">Interfaces</a>
+						</li>
+				<li><a href="namespace-NotORM.Structure.html">Structure</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NotORM.Base.html">Base</a></li>
+				<li><a href="class-NotORM.Literal.html">Literal</a></li>
+				<li class="active"><a href="class-NotORM.MultiResult.html">MultiResult</a></li>
+				<li><a href="class-NotORM.NotORM.html">NotORM</a></li>
+				<li><a href="class-NotORM.Result.html">Result</a></li>
+				<li><a href="class-NotORM.Row.html">Row</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NotORM.html" title="Summary of NotORM"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class MultiResult</h1>
+
+
+	<div class="description">
+	
+<p>Representation of filtered table grouped by some column. Modified to use PHP
+namespeces by Martín Panizzo &lt;<a
+href="mailto:martin&#64;fotolounge.com.ar">martin&#64;<!---->fotolounge.com.ar</a>&gt;</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-NotORM.Base.html"><span>NotORM\Base</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-NotORM.Result.html"><span>NotORM\Result</span></a>
+			
+			 implements 
+				<a href="class-Iterator.html"><span>Iterator</span></a>, 
+			
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>, 
+			
+				<a href="class-Countable.html"><span>Countable</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NotORM\MultiResult</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NotORM.html">NotORM</a><br />
+		
+
+				<b>Author:</b>
+				Jakub Vrána &lt;<a
+href="mailto:vrana&#64;php.net">vrana&#64;<!---->php.net</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-NotORM.MultiResult.html#5" title="Go to source code">lib/NotORM/MultiResult.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#14" title="Go to source code">__construct</a>( <span>string <var>$table</var></span>, <span><code><a href="class-NotORM.Result.html">NotORM\Result</a></code> <var>$result</var></span>, <span>boolean <var>$column</var></span>, <span> <var>$active</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$table</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$result</var></dt>
+					<dd><code><code><a href="class-NotORM.NotORM.html">NotORM\NotORM</a></code></code></dd>
+					<dt><var>$column</var></dt>
+					<dd><code>boolean</code><br>single row</dd>
+					<dt><var>$active</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::__construct</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="via" id="_via">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_MultiResult
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_via">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#22" title="Go to source code">via</a>( <span>string <var>$column</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Specify referencing column</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Specify referencing column</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_MultiResult</code><br>fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Row
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#31" title="Go to source code">insert</a>( <span>mixed <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Insert row in a table</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert row in a table</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>mixed</code><br>array($column =&gt; $value)|Traversable for single row insert or
+NotORM_Result|string for INSERT ... SELECT</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Row</code><br>inserted row or false in case of an error or number of affected rows for INSERT
+... SELECT<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::insert</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert_update" id="_insert_update">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert_update">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#45" title="Go to source code">insert_update</a>( <span>array <var>$unique</var></span>, <span>array <var>$insert</var></span>, <span>array <var>$update</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Insert row or update if it already exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Insert row or update if it already exists</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$unique</var></dt>
+					<dd><code>array</code><br>($column =&gt; $value)</dd>
+					<dt><var>$insert</var></dt>
+					<dd><code>array</code><br>($column =&gt; $value)</dd>
+					<dt><var>$update</var></dt>
+					<dd><code>array</code><br>($column =&gt; $value), empty array means use $insert</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>number of affected rows or false in case of an error<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::insert_update</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="single" id="_single">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_single">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#50" title="Go to source code">single</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::single</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#54" title="Go to source code">update</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Update all rows in result set</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Update all rows in result set</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br>($column =&gt; $value)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>number of affected rows or false in case of an error<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::update</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#62" title="Go to source code">delete</a>( )</code>
+
+		<div class="description short">
+			
+<p>Delete all rows in result set</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Delete all rows in result set</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>number of affected rows or false in case of an error<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::delete</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Result
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#70" title="Go to source code">select</a>( <span>string <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add select clause, more calls appends to the end</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add select clause, more calls appends to the end</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>string</code><br>for example "column, MD5(column) AS column_md5"</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Result</code><br>fluent interface<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::select</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="order" id="_order">
+
+		<td class="attributes"><code>
+			 public 
+			NotORM_Result
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_order">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#78" title="Go to source code">order</a>( <span>string <var>$columns</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Add order clause, more calls appends to the end</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Add order clause, more calls appends to the end</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$columns</var></dt>
+					<dd><code>string</code><br>for example "column1, column2 DESC"</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>NotORM_Result</code><br>fluent interface<br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::order</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="aggregation" id="_aggregation">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_aggregation">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#86" title="Go to source code">aggregation</a>( <span>string <var>$function</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Execute aggregation function</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute aggregation function</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$function</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::aggregation</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="count" id="_count">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_count">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#108" title="Go to source code">count</a>( <span>string <var>$column</var> = <span class="php-quote">&quot;&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Count number of rows</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Count number of rows</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$column</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::count</a></code></div>
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Countable.html#_">Countable::count</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="execute" id="_execute">
+
+		<td class="attributes"><code>
+			 protected 
+			null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_execute">#</a>
+		<code><a href="source-class-NotORM.MultiResult.html#113" title="Go to source code">execute</a>( )</code>
+
+		<div class="description short">
+			
+<p>Execute the built query</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Execute the built query</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>null</code><br />
+				</div>
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-NotORM.Result.html#_">NotORM\Result::execute</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-NotORM.Result.html#methods">NotORM\Result</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Result.html#_">__destruct()</a>, 
+			<a href="class-NotORM.Result.html#_">__invoke()</a>, 
+			<a href="class-NotORM.Result.html#_">__toString()</a>, 
+			<a href="class-NotORM.Result.html#_">access()</a>, 
+			<a href="class-NotORM.Result.html#_">createJoins()</a>, 
+			<a href="class-NotORM.Result.html#_">current()</a>, 
+			<a href="class-NotORM.Result.html#_">fetch()</a>, 
+			<a href="class-NotORM.Result.html#_">fetchPairs()</a>, 
+			<a href="class-NotORM.Result.html#_">formatValue()</a>, 
+			<a href="class-NotORM.Result.html#_">group()</a>, 
+			<a href="class-NotORM.Result.html#_">key()</a>, 
+			<a href="class-NotORM.Result.html#_">limit()</a>, 
+			<a href="class-NotORM.Result.html#_">limitString()</a>, 
+			<a href="class-NotORM.Result.html#_">lock()</a>, 
+			<a href="class-NotORM.Result.html#_">max()</a>, 
+			<a href="class-NotORM.Result.html#_">min()</a>, 
+			<a href="class-NotORM.Result.html#_">next()</a>, 
+			<a href="class-NotORM.Result.html#_">offsetExists()</a>, 
+			<a href="class-NotORM.Result.html#_">offsetGet()</a>, 
+			<a href="class-NotORM.Result.html#_">offsetSet()</a>, 
+			<a href="class-NotORM.Result.html#_">offsetUnset()</a>, 
+			<a href="class-NotORM.Result.html#_">query()</a>, 
+			<a href="class-NotORM.Result.html#_">quote()</a>, 
+			<a href="class-NotORM.Result.html#_">removeExtraDots()</a>, 
+			<a href="class-NotORM.Result.html#_">rewind()</a>, 
+			<a href="class-NotORM.Result.html#_">sum()</a>, 
+			<a href="class-NotORM.Result.html#_">topString()</a>, 
+			<a href="class-NotORM.Result.html#_">union()</a>, 
+			<a href="class-NotORM.Result.html#_">valid()</a>, 
+			<a href="class-NotORM.Result.html#_">where()</a>, 
+			<a href="class-NotORM.Result.html#_">whereString()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-NotORM.Result.html#properties">NotORM\Result</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Result.html#$access"><var>$access</var></a>, 
+			<a href="class-NotORM.Result.html#$accessed"><var>$accessed</var></a>, 
+			<a href="class-NotORM.Result.html#$aggregation"><var>$aggregation</var></a>, 
+			<a href="class-NotORM.Result.html#$conditions"><var>$conditions</var></a>, 
+			<a href="class-NotORM.Result.html#$data"><var>$data</var></a>, 
+			<a href="class-NotORM.Result.html#$group"><var>$group</var></a>, 
+			<a href="class-NotORM.Result.html#$having"><var>$having</var></a>, 
+			<a href="class-NotORM.Result.html#$keys"><var>$keys</var></a>, 
+			<a href="class-NotORM.Result.html#$limit"><var>$limit</var></a>, 
+			<a href="class-NotORM.Result.html#$lock"><var>$lock</var></a>, 
+			<a href="class-NotORM.Result.html#$offset"><var>$offset</var></a>, 
+			<a href="class-NotORM.Result.html#$order"><var>$order</var></a>, 
+			<a href="class-NotORM.Result.html#$parameters"><var>$parameters</var></a>, 
+			<a href="class-NotORM.Result.html#$referencing"><var>$referencing</var></a>, 
+			<a href="class-NotORM.Result.html#$select"><var>$select</var></a>, 
+			<a href="class-NotORM.Result.html#$single"><var>$single</var></a>, 
+			<a href="class-NotORM.Result.html#$union"><var>$union</var></a>, 
+			<a href="class-NotORM.Result.html#$unionLimit"><var>$unionLimit</var></a>, 
+			<a href="class-NotORM.Result.html#$unionOffset"><var>$unionOffset</var></a>, 
+			<a href="class-NotORM.Result.html#$unionOrder"><var>$unionOrder</var></a>, 
+			<a href="class-NotORM.Result.html#$where"><var>$where</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-NotORM.Base.html#properties">NotORM\Base</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-NotORM.Base.html#$cache"><var>$cache</var></a>, 
+			<a href="class-NotORM.Base.html#$connection"><var>$connection</var></a>, 
+			<a href="class-NotORM.Base.html#$debug"><var>$debug</var></a>, 
+			<a href="class-NotORM.Base.html#$driver"><var>$driver</var></a>, 
+			<a href="class-NotORM.Base.html#$freeze"><var>$freeze</var></a>, 
+			<a href="class-NotORM.Base.html#$notORM"><var>$notORM</var></a>, 
+			<a href="class-NotORM.Base.html#$primary"><var>$primary</var></a>, 
+			<a href="class-NotORM.Base.html#$referenced"><var>$referenced</var></a>, 
+			<a href="class-NotORM.Base.html#$rowClass"><var>$rowClass</var></a>, 
+			<a href="class-NotORM.Base.html#$rows"><var>$rows</var></a>, 
+			<a href="class-NotORM.Base.html#$structure"><var>$structure</var></a>, 
+			<a href="class-NotORM.Base.html#$table"><var>$table</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		photoMatic API documentation generated by <a href="http://apigen.org">ApiGen 2.7.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
